@@ -27,7 +27,7 @@ describe.only("Lottery unit test", function () {
     console.log("Mock link token address: " + link_token);
 
     const MockVRFCoordinator = await ethers.getContractFactory(
-      "MockVRFCoordinator"
+      "VRFCoordinatorMock"
     );
     this.mockVRFCoordinator = await MockVRFCoordinator.deploy(link_token);
     await this.mockVRFCoordinator.deployed();
