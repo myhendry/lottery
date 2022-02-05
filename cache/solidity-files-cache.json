@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\contracts\\test\\LinkToken.sol": {
-      "lastModificationDate": 1643141868983,
-      "contentHash": "f9d8e201b86718ff1dc0df5f6da1368c",
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/contracts/test/LinkToken.sol": {
+      "lastModificationDate": 1644039676588,
+      "contentHash": "f860392e583d3c3c33324b5cc54a9770",
       "sourceName": "contracts/test/LinkToken.sol",
       "solcConfig": {
         "version": "0.4.24",
@@ -19,28 +19,32 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
       "imports": [
-        "@chainlink/contracts/src/v0.4/ERC677Token.sol",
-        "@chainlink/contracts/src/v0.4/vendor/StandardToken.sol"
+        "@chainlink/contracts/src/v0.4/LinkToken.sol"
       ],
       "versionPragmas": [
-        "^0.4.11"
+        "^0.4.0"
       ],
-      "artifacts": [
-        "LinkToken"
-      ]
+      "artifacts": []
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\ERC677Token.sol": {
-      "lastModificationDate": 1642275529477,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/ERC677Token.sol": {
+      "lastModificationDate": 1644023465602,
       "contentHash": "45b8db7fb2ef3b6c7dd95365ea22d0ff",
       "sourceName": "@chainlink/contracts/src/v0.4/ERC677Token.sol",
       "solcConfig": {
@@ -57,12 +61,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -77,8 +88,8 @@
         "ERC677Token"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\vendor\\StandardToken.sol": {
-      "lastModificationDate": 1642275530180,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/vendor/StandardToken.sol": {
+      "lastModificationDate": 1644023466942,
       "contentHash": "9e6703cae7b44c16c228e0025c159bdb",
       "sourceName": "@chainlink/contracts/src/v0.4/vendor/StandardToken.sol",
       "solcConfig": {
@@ -95,12 +106,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -115,8 +133,8 @@
         "StandardToken"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\interfaces\\ERC677.sol": {
-      "lastModificationDate": 1642275530027,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/interfaces/ERC677.sol": {
+      "lastModificationDate": 1644023466727,
       "contentHash": "05de760f44a7c34c788f89571bbb77ee",
       "sourceName": "@chainlink/contracts/src/v0.4/interfaces/ERC677.sol",
       "solcConfig": {
@@ -133,12 +151,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -152,8 +177,8 @@
         "ERC677"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\interfaces\\ERC677Receiver.sol": {
-      "lastModificationDate": 1642275530031,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/interfaces/ERC677Receiver.sol": {
+      "lastModificationDate": 1644023466732,
       "contentHash": "59f6b5d24479f462b1376ba5a96edf2a",
       "sourceName": "@chainlink/contracts/src/v0.4/interfaces/ERC677Receiver.sol",
       "solcConfig": {
@@ -170,12 +195,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -187,8 +219,8 @@
         "ERC677Receiver"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\interfaces\\ERC20.sol": {
-      "lastModificationDate": 1642275530023,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/interfaces/ERC20.sol": {
+      "lastModificationDate": 1644023466715,
       "contentHash": "06a6781f289c4039aa25b91d52799fc2",
       "sourceName": "@chainlink/contracts/src/v0.4/interfaces/ERC20.sol",
       "solcConfig": {
@@ -205,12 +237,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -224,8 +263,8 @@
         "ERC20"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\interfaces\\ERC20Basic.sol": {
-      "lastModificationDate": 1642275530023,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/interfaces/ERC20Basic.sol": {
+      "lastModificationDate": 1644023466722,
       "contentHash": "c669adeb22611a05d90e6444dcb431e6",
       "sourceName": "@chainlink/contracts/src/v0.4/interfaces/ERC20Basic.sol",
       "solcConfig": {
@@ -242,12 +281,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -259,8 +305,8 @@
         "ERC20Basic"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\vendor\\BasicToken.sol": {
-      "lastModificationDate": 1642275530102,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/vendor/BasicToken.sol": {
+      "lastModificationDate": 1644023466848,
       "contentHash": "00797d6f33d74331d3436d8dc0cf0c65",
       "sourceName": "@chainlink/contracts/src/v0.4/vendor/BasicToken.sol",
       "solcConfig": {
@@ -277,12 +323,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -297,8 +350,8 @@
         "BasicToken"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.4\\vendor\\SafeMathChainlink.sol": {
-      "lastModificationDate": 1642275530151,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/vendor/SafeMathChainlink.sol": {
+      "lastModificationDate": 1644023466930,
       "contentHash": "25526c623f7624993554d443f0f25549",
       "sourceName": "@chainlink/contracts/src/v0.4/vendor/SafeMathChainlink.sol",
       "solcConfig": {
@@ -315,12 +368,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -332,9 +392,9 @@
         "SafeMathChainlink"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\contracts\\Lottery.sol": {
-      "lastModificationDate": 1643372072633,
-      "contentHash": "9b9bc21780a56becdf1e560d7965b12f",
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/contracts/Lottery.sol": {
+      "lastModificationDate": 1644022417295,
+      "contentHash": "59cc75ab28de66646deadc70b932be01",
       "sourceName": "contracts/Lottery.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -350,12 +410,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -371,8 +438,8 @@
         "Lottery"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV3Interface.sol": {
-      "lastModificationDate": 1642275530817,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1644023468108,
       "contentHash": "611f626b2447ccff9ba5332460fd217f",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
       "solcConfig": {
@@ -389,12 +456,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -406,8 +480,8 @@
         "AggregatorV3Interface"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\VRFConsumerBase.sol": {
-      "lastModificationDate": 1642275529991,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/VRFConsumerBase.sol": {
+      "lastModificationDate": 1644023466664,
       "contentHash": "a70ea296de2000548ba2211a166432fe",
       "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol",
       "solcConfig": {
@@ -424,12 +498,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -444,8 +525,8 @@
         "VRFConsumerBase"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
-      "lastModificationDate": 1642447543798,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1644023466203,
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -462,12 +543,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -481,8 +569,8 @@
         "Ownable"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\LinkTokenInterface.sol": {
-      "lastModificationDate": 1642275530845,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol": {
+      "lastModificationDate": 1644023468143,
       "contentHash": "da5a0c3bd86c896f6a407f909c57edf3",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol",
       "solcConfig": {
@@ -499,12 +587,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -516,8 +611,8 @@
         "LinkTokenInterface"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\VRFRequestIDBase.sol": {
-      "lastModificationDate": 1642275529994,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/VRFRequestIDBase.sol": {
+      "lastModificationDate": 1644023466666,
       "contentHash": "e7fc1c36cb6d9f4b7d64c59dfd2c6211",
       "sourceName": "@chainlink/contracts/src/v0.8/VRFRequestIDBase.sol",
       "solcConfig": {
@@ -534,12 +629,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -551,8 +653,8 @@
         "VRFRequestIDBase"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1642447543396,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1644023464520,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -569,12 +671,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -586,9 +695,9 @@
         "Context"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\contracts\\test\\MockVRFCoordinator.sol": {
-      "lastModificationDate": 1642452913391,
-      "contentHash": "eecf78224de038041693224e6c3850de",
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/contracts/test/MockVRFCoordinator.sol": {
+      "lastModificationDate": 1644039732550,
+      "contentHash": "c71ed621567ade335f1c910a605381bd",
       "sourceName": "contracts/test/MockVRFCoordinator.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -604,12 +713,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -618,14 +734,14 @@
         "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol"
       ],
       "versionPragmas": [
-        "0.8.0"
+        "^0.8.0"
       ],
       "artifacts": [
         "MockVRFCoordinator"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorV2V3Interface.sol": {
-      "lastModificationDate": 1642275530810,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol": {
+      "lastModificationDate": 1644023468106,
       "contentHash": "8634be6a1c8b65b4c0bfd6d1fa765e72",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV2V3Interface.sol",
       "solcConfig": {
@@ -642,12 +758,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -662,8 +785,8 @@
         "AggregatorV2V3Interface"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\interfaces\\AggregatorInterface.sol": {
-      "lastModificationDate": 1642275530810,
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol": {
+      "lastModificationDate": 1644023468102,
       "contentHash": "f00f7f6071813249ee968d1114635a81",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorInterface.sol",
       "solcConfig": {
@@ -680,12 +803,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -697,9 +827,9 @@
         "AggregatorInterface"
       ]
     },
-    "C:\\Users\\spenc\\Desktop\\Coding\\Solidity\\lottery\\contracts\\test\\MockV3Aggregator.sol": {
-      "lastModificationDate": 1642452715913,
-      "contentHash": "3926a7bbdece538cc35b0bddc8c3befe",
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/contracts/test/MockV3Aggregator.sol": {
+      "lastModificationDate": 1644040027649,
+      "contentHash": "10b1f3c6c69a38d9fd608b3a56142d7f",
       "sourceName": "contracts/test/MockV3Aggregator.sol",
       "solcConfig": {
         "version": "0.8.0",
@@ -715,12 +845,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -730,8 +867,441 @@
       "versionPragmas": [
         "^0.8.0"
       ],
+      "artifacts": []
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.4/LinkToken.sol": {
+      "lastModificationDate": 1644023465615,
+      "contentHash": "e9f0ef74e0010d065eca3b3031c440dd",
+      "sourceName": "@chainlink/contracts/src/v0.4/LinkToken.sol",
+      "solcConfig": {
+        "version": "0.4.24",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ERC677Token.sol",
+        "./vendor/StandardToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.4.11"
+      ],
+      "artifacts": [
+        "LinkToken"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol": {
+      "lastModificationDate": 1644023467575,
+      "contentHash": "b1f27d8f04303e8c78cd057685d883f6",
+      "sourceName": "@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AggregatorV2V3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
       "artifacts": [
         "MockV3Aggregator"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol": {
+      "lastModificationDate": 1644023467405,
+      "contentHash": "6b76a24083942363411bb0b83ffeb997",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AggregatorInterface.sol",
+        "./AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV2V3Interface"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol": {
+      "lastModificationDate": 1644023467398,
+      "contentHash": "0c9be74e354bca05abc54edfdc49607e",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorInterface"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1644023467409,
+      "contentHash": "57d487d5ebb80b57ceb68a4d9bd884e3",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol": {
+      "lastModificationDate": 1644023467596,
+      "contentHash": "88954060c412aad4831523a50b3b6653",
+      "sourceName": "@chainlink/contracts/src/v0.6/tests/VRFCoordinatorMock.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/LinkTokenInterface.sol",
+        "../VRFConsumerBase.sol"
+      ],
+      "versionPragmas": [
+        "0.6.6"
+      ],
+      "artifacts": [
+        "VRFCoordinatorMock"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol": {
+      "lastModificationDate": 1644023467438,
+      "contentHash": "bb291d0e43a81edd96f781b2760d9553",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "LinkTokenInterface"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/VRFConsumerBase.sol": {
+      "lastModificationDate": 1644023466167,
+      "contentHash": "f2dc8e28e0caa46214258662409701b4",
+      "sourceName": "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./vendor/SafeMathChainlink.sol",
+        "./interfaces/LinkTokenInterface.sol",
+        "./VRFRequestIDBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "VRFConsumerBase"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol": {
+      "lastModificationDate": 1644023467692,
+      "contentHash": "5caf46296cfce2e0b96cb3028b626ee5",
+      "sourceName": "@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMathChainlink"
+      ]
+    },
+    "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/node_modules/@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol": {
+      "lastModificationDate": 1644023466195,
+      "contentHash": "d06006d32515b595a7b70c88328ffd7e",
+      "sourceName": "@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "VRFRequestIDBase"
       ]
     }
   }
