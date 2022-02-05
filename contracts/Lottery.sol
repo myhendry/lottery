@@ -7,7 +7,6 @@ import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Lottery is Ownable, VRFConsumerBase {
-
     address payable[] public players;
     uint256 public usdEntranceFee;
     AggregatorV3Interface internal ethUsdPriceFeed;
@@ -24,36 +23,42 @@ contract Lottery is Ownable, VRFConsumerBase {
     event RequestedRandomNumber(bytes32 requestId);
 
     constructor(
-        address _priceFeedAddress,
-        address _vrfCoordinator,
-        address _link,
-        uint256 _fee,
-        bytes32 _keyhash
-    ) VRFConsumerBase(_vrfCoordinator, _link) {
+        address priceFeedAddress,
+        address vrfCoordinatorAddress,
+        address linkAddress,
+        uint256 fee_payable,
+        bytes32 keyHash
+    ) VRFConsumerBase(vrfCoordinatorAddress, linkAddress) {
         usdEntranceFee = 50 * (10**18);
-        ethUsdPriceFeed = AggregatorV3Interface(_priceFeedAddress);
+        ethUsdPriceFeed = AggregatorV3Interface(priceFeedAddress);
         lotteryState = LOTTERY_STATE.CLOSED;
-        fee = _fee;
-        keyhash = _keyhash;
+        fee = fee_payable;
+        keyhash = keyHash;
     }
 
     // Allows a player to enter the lottery by paying the entrance fee.
     function enter() public payable {
         require(lotteryState == LOTTERY_STATE.OPEN, "Lottery is not open.");
-        require(msg.value >= getEntranceFee(), "Insufficient funds to enter the lottery");
+        require(
+            msg.value >= getEntranceFee(),
+            "Insufficient funds to enter the lottery"
+        );
         players.push(payable(msg.sender));
     }
 
     // Calculates the entrance fee in ETH using a Chainlink oracle.
     function getEntranceFee() public view returns (uint256) {
-        (, int price, ,,) = ethUsdPriceFeed.latestRoundData();
+        (, int256 price, , , ) = ethUsdPriceFeed.latestRoundData();
         uint256 adjustedPrice = uint256(price) * 10**10;
         uint256 costToEnter = (usdEntranceFee * 10**18) / adjustedPrice;
         return costToEnter;
     }
-    
+
     function startLottery() public onlyOwner {
-        require(lotteryState == LOTTERY_STATE.CLOSED, "Lottery is already open.");
+        require(
+            lotteryState == LOTTERY_STATE.CLOSED,
+            "Lottery is already open."
+        );
         lotteryState = LOTTERY_STATE.OPEN;
     }
 
@@ -66,8 +71,14 @@ contract Lottery is Ownable, VRFConsumerBase {
     }
 
     // Callback function called by the VRF coordinator when the random number is returned.
-    function fulfillRandomness(bytes32 _requestId, uint256 _randomness) internal override {
-        require(lotteryState == LOTTERY_STATE.CALCULATING_WINNER, "Lottery is not in the calculating winner state.");
+    function fulfillRandomness(bytes32 _requestId, uint256 _randomness)
+        internal
+        override
+    {
+        require(
+            lotteryState == LOTTERY_STATE.CALCULATING_WINNER,
+            "Lottery is not in the calculating winner state."
+        );
         require(_randomness > 0, "A random number was not found.");
         latestRandomNumber = _randomness;
         uint256 winnerIndex = _randomness % players.length;
@@ -76,5 +87,4 @@ contract Lottery is Ownable, VRFConsumerBase {
         players = new address payable[](0);
         lotteryState = LOTTERY_STATE.CLOSED;
     }
-
 }

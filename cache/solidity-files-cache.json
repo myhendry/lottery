@@ -653,8 +653,8 @@
       ]
     },
     "/Users/hendrylim/Coding/BLOCKCHAIN/lottery/contracts/Lottery.sol": {
-      "lastModificationDate": 1644022417295,
-      "contentHash": "59cc75ab28de66646deadc70b932be01",
+      "lastModificationDate": 1644072198307,
+      "contentHash": "5582f2b645006430e3e08826280a4ce6",
       "sourceName": "contracts/Lottery.sol",
       "solcConfig": {
         "version": "0.8.0",

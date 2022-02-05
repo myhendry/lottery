@@ -51,6 +51,37 @@ task("endLottery", "Ends the lottery")
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
+  networks: {
+    // hardhat: {
+    //   forking: {
+    //     url: process.env.ALCHEMY_MAINNET_URL,
+    //     gas: 10000,
+    //   },
+    // },
+    rinkeby: {
+      url: process.env.ALCHEMY_RINKEBY_URL || "",
+      chainId: 4,
+      accounts: [
+        `0x${process.env.PRIVATE_KEY_DEPLOYER}`,
+        `0x${process.env.PRIVATE_KEY_USER_2}`,
+        `0x${process.env.PRIVATE_KEY_USER_3}`,
+      ].filter((x) => x !== undefined),
+    },
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0,
+      4: 0,
+    },
+    user2: {
+      default: 1,
+      4: 1,
+    },
+    user3: {
+      default: 2,
+      4: 2,
+    },
+  },
   solidity: {
     compilers: [
       {
@@ -66,25 +97,6 @@ module.exports = {
         version: "0.8.0",
       },
     ],
-  },
-  networks: {
-    hardhat: {
-      forking: {
-        url: process.env.ALCHEMY_MAINNET_URL,
-        gas: 10000,
-      },
-    },
-    rinkeby: {
-      url: process.env.ALCHEMY_RINKEBY_URL,
-      accounts: [
-        `0x${process.env.PRIVATE_KEY_DEPLOYER}`,
-        `0x${process.env.PRIVATE_KEY_USER_2}`,
-        `0x${process.env.PRIVATE_KEY_USER_3}`,
-      ],
-      timeout: 60000,
-      gas: 2100000,
-      gasPrice: 8000000000,
-    },
   },
   mocha: {
     timeout: 100000,

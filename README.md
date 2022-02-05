@@ -6,9 +6,10 @@ This project is a blockchain-based lottery which allows users to enter by paying
 
 ## Setup
 
-1) Clone the repository
-2) Run `npm install`
-3) Create a `secrets.json` file with the following contents:
+1. Clone the repository
+2. Run `npm install`
+3. Create a `secrets.json` file with the following contents:
+
 ```
     {
         "alchemyMainnetUrl": "",
@@ -19,10 +20,10 @@ This project is a blockchain-based lottery which allows users to enter by paying
 
 ## Deploying locally
 
-1) Open a terminal window and run `npx hardhat node`
-2) Open a second terminal window
-2) Run `npx hardhat run scripts/deploy.js --network localhost`
-3) Note the addresses of the Lottery and LinkToken contracts
+1. Open a terminal window and run `npx hardhat node`
+2. Open a second terminal window
+3. Run `npx hardhat run scripts/deploy.js --network localhost`
+4. Note the addresses of the Lottery and LinkToken contracts
 
 ## Testing
 
@@ -31,7 +32,10 @@ This project is a blockchain-based lottery which allows users to enter by paying
 
 ## Tasks
 
-1) Run `npx hardhat startLottery <Lottery address> --network localhost`
-2) Run `npx hardhat enterLottery <Lottery address> --network localhost`
-3) Run `npx hardhat fundWithLink <Lottery address> <LinkToken address> --network localhost`
-4) Run `npx hardhat endLottery <Lottery address> --network localhost`
+1. Run `npx hardhat startLottery <Lottery address> --network localhost`
+2. Run `npx hardhat enterLottery <Lottery address> --network localhost`
+3. Run `npx hardhat fundWithLink <Lottery address> <LinkToken address> --network localhost`
+4. Run `npx hardhat endLottery <Lottery address> --network localhost`
+
+npx hardhat deploy // localhost
+npx hardhat deploy --network rinkeby // rinkeby
