@@ -1,12 +1,14 @@
-const { config } = require("../config/chainlink.config");
-const { NETWORK } = require("../types");
+import { HardhatRuntimeEnvironment } from "hardhat/types";
+import { DeployFunction } from "hardhat-deploy/types";
+import { config } from "../chainlink.config";
+import { NETWORK } from "../types";
 
-module.exports = async ({
+const func: DeployFunction = async ({
   getNamedAccounts,
   deployments,
   getChainId,
   ethers,
-}) => {
+}: HardhatRuntimeEnvironment) => {
   const { deploy, get, log } = deployments;
   const { deployer } = await getNamedAccounts();
   const chainId = await getChainId();
@@ -15,6 +17,7 @@ module.exports = async ({
   let linkTokenAddress;
   let vrfCoordinatorMock;
   let vrfCoordinatorAddress;
+  let priceFeedMock;
   let priceFeedAddress;
   let additionalMessage = "";
 
@@ -23,7 +26,8 @@ module.exports = async ({
     linkTokenAddress = linkToken.address;
     vrfCoordinatorMock = await get("VRFCoordinatorMock");
     vrfCoordinatorAddress = vrfCoordinatorMock.address;
-    priceFeedAddress = config[chainId].price_feed_address;
+    priceFeedMock = await get("MockV3Aggregator");
+    priceFeedAddress = priceFeedMock.address;
     additionalMessage =
       " --linkaddress " +
       linkTokenAddress +
@@ -61,4 +65,7 @@ module.exports = async ({
   log("----------------------------------------------------");
 };
 
-module.exports.tags = ["all", "main"];
+export default func;
+
+//module.exports.tags = ["all", "main"];
+func.tags = ["all", "main"];

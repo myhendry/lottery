@@ -39,3 +39,12 @@ This project is a blockchain-based lottery which allows users to enter by paying
 
 npx hardhat deploy // localhost
 npx hardhat deploy --network rinkeby // rinkeby
+
+# TROUBLESHOOT
+
+_Could not resolve dependency_
+https://github.com/DeborahK/Angular-GettingStarted/issues/143
+https://github.com/dethcrypto/TypeChain/issues/406
+
+npm outdated
+npm i --force

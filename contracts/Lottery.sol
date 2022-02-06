@@ -87,4 +87,8 @@ contract Lottery is Ownable, VRFConsumerBase {
         players = new address payable[](0);
         lotteryState = LOTTERY_STATE.CLOSED;
     }
+
+    function getPlayers() external view returns (address payable[] memory) {
+        return players;
+    }
 }
