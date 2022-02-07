@@ -80,12 +80,12 @@ contract Lottery is Ownable, VRFConsumerBase {
             "Lottery is not in the calculating winner state."
         );
         require(_randomness > 0, "A random number was not found.");
-        latestRandomNumber = _randomness;
         uint256 winnerIndex = _randomness % players.length;
         latestWinner = players[winnerIndex];
         latestWinner.transfer(address(this).balance);
         players = new address payable[](0);
         lotteryState = LOTTERY_STATE.CLOSED;
+        latestRandomNumber = _randomness;
     }
 
     function getPlayers() external view returns (address payable[] memory) {

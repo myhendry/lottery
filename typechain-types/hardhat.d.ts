@@ -69,10 +69,6 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.LinkTokenInterface__factory>;
     getContractFactory(
-      name: "VRFCoordinatorMock",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.VRFCoordinatorMock__factory>;
-    getContractFactory(
       name: "VRFConsumerBase",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.VRFConsumerBase__factory>;
@@ -84,6 +80,14 @@ declare module "hardhat/types/runtime" {
       name: "Lottery",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Lottery__factory>;
+    getContractFactory(
+      name: "VRFCoordinatorMock",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.VRFCoordinatorMock__factory>;
+    getContractFactory(
+      name: "VRFCoordinatorMock",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.VRFCoordinatorMock__factory>;
 
     getContractAt(
       name: "ERC677Token",
@@ -156,11 +160,6 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.LinkTokenInterface>;
     getContractAt(
-      name: "VRFCoordinatorMock",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.VRFCoordinatorMock>;
-    getContractAt(
       name: "VRFConsumerBase",
       address: string,
       signer?: ethers.Signer
@@ -175,6 +174,16 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Lottery>;
+    getContractAt(
+      name: "VRFCoordinatorMock",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.VRFCoordinatorMock>;
+    getContractAt(
+      name: "VRFCoordinatorMock",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.VRFCoordinatorMock>;
 
     // default types
     getContractFactory(

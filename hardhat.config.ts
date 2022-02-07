@@ -55,12 +55,12 @@ dotenv.config();
  */
 module.exports = {
   networks: {
-    // hardhat: {
-    //   forking: {
-    //     url: process.env.ALCHEMY_MAINNET_URL,
-    //     gas: 10000,
-    //   },
-    // },
+    hardhat: {
+      forking: {
+        url: process.env.ALCHEMY_MAINNET_URL,
+        gas: 10000,
+      },
+    },
     rinkeby: {
       url: process.env.ALCHEMY_RINKEBY_URL || "",
       chainId: 4,

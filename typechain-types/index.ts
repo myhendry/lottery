@@ -14,10 +14,10 @@ export type { AggregatorV2V3Interface } from "./AggregatorV2V3Interface";
 export type { AggregatorV3Interface } from "./AggregatorV3Interface";
 export type { MockV3Aggregator } from "./MockV3Aggregator";
 export type { LinkTokenInterface } from "./LinkTokenInterface";
-export type { VRFCoordinatorMock } from "./VRFCoordinatorMock";
 export type { VRFConsumerBase } from "./VRFConsumerBase";
 export type { Ownable } from "./Ownable";
 export type { Lottery } from "./Lottery";
+export type { VRFCoordinatorMock } from "./VRFCoordinatorMock";
 
 export { ERC677Token__factory } from "./factories/ERC677Token__factory";
 export { ERC20__factory } from "./factories/ERC20__factory";
@@ -32,7 +32,7 @@ export { AggregatorV2V3Interface__factory } from "./factories/AggregatorV2V3Inte
 export { AggregatorV3Interface__factory } from "./factories/AggregatorV3Interface__factory";
 export { MockV3Aggregator__factory } from "./factories/MockV3Aggregator__factory";
 export { LinkTokenInterface__factory } from "./factories/LinkTokenInterface__factory";
-export { VRFCoordinatorMock__factory } from "./factories/VRFCoordinatorMock__factory";
 export { VRFConsumerBase__factory } from "./factories/VRFConsumerBase__factory";
 export { Ownable__factory } from "./factories/Ownable__factory";
 export { Lottery__factory } from "./factories/Lottery__factory";
+export { VRFCoordinatorMock__factory } from "./factories/VRFCoordinatorMock__factory";
