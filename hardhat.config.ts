@@ -1,54 +1,86 @@
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
+import "@nomiclabs/hardhat-web3";
 import "@typechain/hardhat";
 import "hardhat-deploy";
 import "@appliedblockchain/chainlink-plugins-fund-link";
-// import { ethers } from "hardhat";
-// import { task } from "hardhat/config";
+import { task, subtask, types } from "hardhat/config";
 import dotenv from "dotenv-safe";
 dotenv.config();
 
-// task("startLottery", "Starts the lottery")
-//   .addPositionalParam("address", "The address of the lottery contract")
-//   .setAction(async (args) => {
-//     const { address } = args;
-//     const Lottery = await ethers.getContractFactory("Lottery");
-//     const lottery = await Lottery.attach(address);
-//     await lottery.startLottery();
-//     console.log("Lottery started");
-//   });
+task("balance", "Prints an account balance")
+  .addParam("account", "The account's address", null, types.string)
+  .setAction(async (taskArgs, { ethers }) => {
+    const balance = await ethers.provider.getBalance(taskArgs.account);
+    console.log(ethers.utils.formatEther(balance), "ETH");
+  });
 
-// task("enterLottery", "Enters the lottery")
-//   .addPositionalParam("address", "The address of the lottery contract")
-//   .setAction(async (args) => {
-//     const { address } = args;
-//     const Lottery = await ethers.getContractFactory("Lottery");
-//     const lottery = await Lottery.attach(address);
-//     const value = await lottery.getEntranceFee();
-//     await lottery.enter((overrides = { value: value }));
-//     console.log("Entered lottery");
-//   });
+task("balance", "Prints account BALANCE").setAction(
+  async (taskArgs, { ethers }, runSuper) => {
+    if (runSuper.isDefined) {
+      runSuper();
+      const balance = await ethers.provider.getBalance(taskArgs.account);
+      console.log(
+        ethers.utils.formatEther(balance),
+        "ETH is the account balance"
+      );
+    }
+  }
+);
 
-// task("fundWithLink", "Funds the lottery with LINK")
-//   .addPositionalParam("contractAddress", "The address of the lottery contract")
-//   .addPositionalParam("linkAddress", "The address of the LINK token")
-//   .setAction(async (args) => {
-//     const { contractAddress, linkAddress } = args;
-//     const LinkToken = await ethers.getContractFactory("LinkToken");
-//     const linkToken = await LinkToken.attach(linkAddress);
-//     await linkToken.transfer(contractAddress, 1000000000000000);
-//     console.log("Funded lottery with LINK");
-//   });
+task("hello-world", "Prints a hello world message").setAction(
+  async (taskArgs, hre) => {
+    await hre.run("print", { message: "Hello, World!" });
+  }
+);
 
-// task("endLottery", "Ends the lottery")
-//   .addPositionalParam("address", "The address of the lottery contract")
-//   .setAction(async (args) => {
-//     const { address } = args;
-//     const Lottery = await ethers.getContractFactory("Lottery");
-//     const lottery = await Lottery.attach(address);
-//     const winner = await lottery.endLottery();
-//     console.log(winner + " won the lottery");
-//   });
+subtask("print", "Prints a message")
+  .addParam("message", "The message to print")
+  .setAction(async (taskArgs) => {
+    console.log(taskArgs.message);
+  });
+
+task("startLottery", "Starts the lottery")
+  .addPositionalParam("address", "The address of the lottery contract")
+  .setAction(async (args, { ethers }) => {
+    const { address } = args;
+    const Lottery = await ethers.getContractFactory("Lottery");
+    const lottery = await Lottery.attach(address);
+    await lottery.startLottery();
+    console.log("Lottery started");
+  });
+
+task("enterLottery", "Enters the lottery")
+  .addPositionalParam("address", "The address of the lottery contract")
+  .setAction(async (args, { ethers }) => {
+    const { address } = args;
+    const Lottery = await ethers.getContractFactory("Lottery");
+    const lottery = await Lottery.attach(address);
+    const value = await lottery.getEntranceFee();
+    await lottery.enter({ value: value });
+    console.log("Entered lottery");
+  });
+
+task("fundWithLink", "Funds the lottery with LINK")
+  .addPositionalParam("contractAddress", "The address of the lottery contract")
+  .addPositionalParam("linkAddress", "The address of the LINK token")
+  .setAction(async (args, { ethers }) => {
+    const { contractAddress, linkAddress } = args;
+    const LinkToken = await ethers.getContractFactory("LinkToken");
+    const linkToken = await LinkToken.attach(linkAddress);
+    await linkToken.transfer(contractAddress, 1000000000000000);
+    console.log("Funded lottery with LINK");
+  });
+
+task("endLottery", "Ends the lottery")
+  .addPositionalParam("address", "The address of the lottery contract")
+  .setAction(async (args, { ethers }) => {
+    const { address } = args;
+    const Lottery = await ethers.getContractFactory("Lottery");
+    const lottery = await Lottery.attach(address);
+    const winner = await lottery.endLottery();
+    console.log(winner + " won the lottery");
+  });
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
